@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller HTML CSS JS</title>
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <section id="Punto1" class="punto">
+    <h2>Punto 1</h2>
+    <table>
+      <tr>
+        <th>Hora\Dia</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <tr>
+        <td>7:00 - 9:00</td>
+        <td></td>
+        <td></td>
+        <td>Programacion II</td>
+        <td>Estructuracion del Pensamiento</td>
+        <td>Programacion II</td>
+      </tr>
+      <tr>
+        <td>9:00 - 11:00</td>
+        <td>Fisica II</td>
+        <td>Programacion II</td>
+        <td>Fisica II</td>
+        <td>Proyecto Nucleo</td>
+        <td>Fisica II</td>
+      </tr>
+      <tr>
+        <td>11:00 - 13:00</td>
+        <td>Calculo Integral</td>
+        <td>Estadistica</td>
+        <td>Calculo Integral</td>
+        <td>Estadistica</td>
+        <td>Calculo Integral</td>
+      </tr>
+      <tr class="espacio"></tr>
+      <tr>
+        <td>14:00 - 16:00</td>
+        <td>Estructuras de Datos</td>
+        <td></td>
+        <td>Estructuras de Datos</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="punto" id="Punto2">
+    <h2>Punto 2</h2>
+    <div id="contenido">
+      <div id="rojo">Rojo</div>
+      <div id="azul">Azul</div>
+      <div id="negro">Negro</div>
+      <div id="amarillo">Amarillo</div>
+      <div id="verde">Verde</div>
+    </div>
+  </section>
+  <section class="punto" id="Punto3">
+    <h2>Punto 3</h2>
+    <div class="contenedorNumeros">
+      <span>
+        <input placeholder="Numero 1" type="number" name="numero1" id="numero1"class="numero input">
+        <label for="numero1"> Numero 1: </label>
+      </span>
+      <span>
+        <input placeholder="Numero 2" type="number" name="numero2" id="numero2"class="numero input">
+        <label for="numero2"> Numero 2: </label>
+      </span>
+      <span>
+        <input placeholder="Numero 3" type="number" name="numero3" id="numero3"class="numero input">
+        <label for="numero3"> Numero 3: </label>
+      </span>
+      <span>
+        <input placeholder="Numero 4" type="number" name="numero4" id="numero4"class="numero input">
+        <label for="numero4"> Numero 4: </label>
+      </span>
+      <span>
+        <input placeholder="Numero 5" type="number" name="numero5" id="numero5"class="numero input">
+        <label for="numero5"> Numero 5: </label>
+      </span>
+    <button class="boton botonNumeros" onclick="calcular()">Calcular</button>
+
+    </div>
+
+
+    <p>Promedio: <span id="Promedio"></span></p>
+    <p>Mayor: <span id="Mayor"></span></p>
+    <p>Menor: <span id="Menor"></span></p>
+
+  </section>
+
+  <section class="punto" id="Punto4">
+    <h2>Punto 4</h2>
+    <div class="inputs">
+      <span>
+        <input type="text" id="textoPalabras" class="input" placeholder="Texto">
+        <label for="textoPalabras">Texto:</label>
+      </span>
+    </div>
+  <button class="boton" onclick="contarPalabras()">Contar Palabras</button>
+    <p>Palabras: <span id="Palabras"></span></p>
+  </section>
+
+  <section class="punto" id="Punto5">
+    <h2>Punto 5</h2>
+    <div class="inputs">
+      <span>
+        <input class="input" type="text" id="textoVocales" placeholder="Texto">
+        <label for="textoVocales">Texto:</label>
+      </span>
+    </div>
+    <button class="boton" onclick="contarVocales()">Contar Vocales</button>
+    <p>Cantidad a: <span id="a"></span></p>
+    <p>Cantidad e: <span id="e"></span></p>
+    <p>Cantidad i: <span id="i"></span></p>
+    <p>Cantidad o: <span id="o"></span></p>
+    <p>Cantidad u: <span id="u"></span></p>
+  </section>
+
+  <section class="punto" id="Punto6">
+    <h2>Punto 6</h2>
+    <div id="Calculadora">
+      <input class="input" type="text" id="textoCalculadora" disabled>
+      <button  class="botonCalculadora boton">1</button>
+      <button  class="botonCalculadora boton">2</button>
+      <button  class="botonCalculadora boton">3</button>
+      <button  class="botonCalculadora boton">+</button>
+      <button  class="botonCalculadora boton">4</button>
+      <button  class="botonCalculadora boton">5</button>
+      <button  class="botonCalculadora boton">6</button>
+      <button  class="botonCalculadora boton">-</button>
+      <button  class="botonCalculadora boton">7</button>
+      <button  class="botonCalculadora boton">8</button>
+      <button  class="botonCalculadora boton">9</button>
+      <button  class="botonCalculadora boton">x</button>
+      <button  class="botonCalculadora boton">c</button>
+      <button  class="botonCalculadora boton">0</button>
+      <button  class="botonCalculadora boton">=</button>
+      <button  class="botonCalculadora boton">/</button>
+    </div>
+  </section>
+
+</body>
+
+</html>
