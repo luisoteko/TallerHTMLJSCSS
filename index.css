@@ -1,5 +1,5 @@
 html{
-  overflow-x: hidden;
+  max-width: 1200px;
 }
 
 body{
@@ -33,6 +33,8 @@ td {
   display: grid;
   grid-template-columns: 150px 150px 150px;
   grid-template-rows: 150px 150px 150px;
+  margin-left: 50px;
+
 }
 
 
@@ -254,7 +256,7 @@ td {
 
 #Punto5{
   position: absolute;
-  top: 1185px;
+  top: 1140px;
   left: 520px;
   margin-bottom: 40px;
 }
@@ -267,7 +269,6 @@ td {
 
 .punto p{
   position: relative;
-  top: -35px;
   left: 120px;
 }
 .Lista{
@@ -304,6 +305,7 @@ td {
 #Punto1 h2{
   margin-left: 45%;
 }
+
 #Punto2 h2{
   margin-left: 14%;
 }
@@ -324,6 +326,8 @@ footer{
   background-color: #377D6A;
   width: 100%;
   height: 30px;
+  left: 0;
+  right: 0;
 }
 
 @media(max-width: 720px){
