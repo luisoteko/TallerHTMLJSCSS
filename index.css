@@ -5,13 +5,17 @@ html{
 body{
   background-color: beige;
   height: 1400px;
+  background-color: #032429;
+  color: white;
 }
 
-table, td,tr {
+table, td,tr, th {
   border: 1px solid black;
   text-align: center;
   padding: 7px;
+
 }
+
 
 table{
   border: 0;
@@ -107,32 +111,19 @@ td {
 }
 
 .botonNumeros{
-  margin-left: 20%;
+  margin-left: 114.5px;
   width: 232px;
 }
 
-.boton:not(.botonNumeros):not(.botonCalculadora){
-  position: relative;
-  left: 50px;
-  top: -30px
-}
 
 .inputs span, .contenedorNumeros span {
   position: relative;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 114.5px;
+  width: 232px;
 }
 
 .inputs{
   display: inline-block;
-}
-
-#textoPalabras{
-  margin-left: 25px;
-}
-
-#textoPalabras + label{
-  left: 25px;
 }
 
 .input {
@@ -262,19 +253,101 @@ td {
 }
 
 #Punto5{
-  position: relative;
-  top: -178px;
-  left: 500px;
+  position: absolute;
+  top: 1185px;
+  left: 520px;
+  margin-bottom: 40px;
 }
 
 #Punto6{
   position: absolute;
-  top: 356px;
-  left: 550px;
+  top: 410px;
+  left: 680px;
 }
 
 .punto p{
   position: relative;
   top: -35px;
-  left: 80px;
+  left: 120px;
+}
+.Lista{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  left: 0;
+}
+
+.nav_item{
+  padding: 20px;
+  list-style: none;
+  height: 18px;
+  left: 30px
+}
+
+.nav_item a{
+  text-decoration: none;
+  color: white;
+}
+
+#Punto1{
+  margin-top: 10px;
+}
+
+#Punto5 p{
+  position: initial;
+  margin-left: 120px;
+}
+#Punto4 p{
+  top: 5px;
+}
+
+#Punto1 h2{
+  margin-left: 45%;
+}
+#Punto2 h2{
+  margin-left: 14%;
+}
+#Punto3 h2{
+  margin-left: 43%;
+}
+#Punto4 h2{
+  margin-left: 15%;
+}
+#Punto5 h2{
+  margin-left: 43%;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  padding-left: 35%;
+  padding-top: 13px;
+  background-color: #377D6A;
+  width: 100%;
+  height: 30px;
+}
+
+@media(max-width: 720px){
+  .punto{
+    display: block;
+    position: initial;
+  }
+  #Punto6{
+    position: initial;
+    margin-left: 20%;
+  }
+  #Punto5{
+    position: initial;
+    
+  }
+  .contenedorNumeros{
+    grid-template-columns: auto;
+    margin-bottom: 40px;
+  }
+  #Punto2{
+    margin-left: 30px
+  }
+
+  .Lista{
+    flex-wrap: wrap;
+  }
 }
